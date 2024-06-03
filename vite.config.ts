@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
+import path from "path";
 // import devtools from 'solid-devtools/vite';
 
 export default defineConfig({
@@ -22,6 +23,11 @@ export default defineConfig({
       },
     }),
   ],
+  resolve: {
+    alias: {
+      "~": path.resolve(__dirname, "./src"),
+    },
+  },
   server: {
     port: 3000,
   },
