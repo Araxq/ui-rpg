@@ -12,7 +12,7 @@ export type TOutcome = TStory["choices"][0]["outcome"];
 type Props = {};
 
 const Story: Component<Props> = () => {
-  const [story, setStory] = createSignal(storyData[0]);
+  const [story] = createSignal(storyData[0]);
   const [outcome, setOutcome] = createSignal<TOutcome>();
 
   return (
