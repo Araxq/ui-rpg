@@ -1,4 +1,4 @@
-import { JSX, splitProps, ValidComponent } from "solid-js";
+import { Component, JSX, splitProps, ValidComponent } from "solid-js";
 
 import * as ButtonPrimitive from "@kobalte/core/button";
 import { PolymorphicProps } from "@kobalte/core/polymorphic";
@@ -16,11 +16,10 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input hover:bg-accent hover:text-accent-foreground",
+          "border border-input hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -39,10 +38,10 @@ const buttonVariants = cva(
 type ButtonProps = ButtonPrimitive.ButtonRootProps &
   VariantProps<typeof buttonVariants> & {
     class?: string | undefined;
-    children?: JSX.Element;
+    children?: JSX.Element | Component<JSX.SvgSVGAttributes<SVGSVGElement>>;
   };
 
-const Button = <T extends ValidComponent = "button">(
+const Btn = <T extends ValidComponent = "button">(
   props: PolymorphicProps<T, ButtonProps>,
 ) => {
   const [local, others] = splitProps(props as ButtonProps, [
@@ -62,4 +61,4 @@ const Button = <T extends ValidComponent = "button">(
 };
 
 export type { ButtonProps };
-export { Button, buttonVariants };
+export { Btn, buttonVariants };

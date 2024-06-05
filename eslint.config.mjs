@@ -10,5 +10,5 @@ export default [
   ...tseslint.configs.recommended,
   eslintConfigSolid,
   eslintConfigPrettier,
-  { rules: {} },
+  { rules: { "no-console": "warn" } },
 ];

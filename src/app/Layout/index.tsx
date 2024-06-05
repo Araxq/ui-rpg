@@ -4,11 +4,11 @@ import Sidebar from "~/app/Layout/Sidebar";
 
 const Layout: FlowComponent = (p) => {
   return (
-    <div class="flex h-screen flex-col">
+    <div class="flex h-screen flex-col font-mono">
       <TopBar />
       <div class="flex h-full">
         <Sidebar />
-        <div class="flex-1 p-4">{p.children}</div>
+        <div class="flex-1 p-8">{p.children}</div>
       </div>
     </div>
   );

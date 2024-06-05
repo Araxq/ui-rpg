@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
+import solidSvg from "vite-plugin-solid-svg";
 import path from "path";
 // import devtools from 'solid-devtools/vite';
 
@@ -22,6 +23,7 @@ export default defineConfig({
         ],
       },
     }),
+    solidSvg(),
   ],
   resolve: {
     alias: {
