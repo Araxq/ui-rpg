@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-import eslint from "vite-plugin-eslint";
 import solidPlugin from "vite-plugin-solid";
 import solidSvg from "vite-plugin-solid-svg";
 import path from "path";
@@ -7,7 +6,6 @@ import path from "path";
 
 export default defineConfig({
   plugins: [
-    eslint(),
     /* 
     Uncomment the following line to enable solid-devtools.
     For more info see https://github.com/thetarnav/solid-devtools/tree/main/packages/extension#readme
