@@ -1,0 +1,33 @@
+@property --lines {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0.00005px;
+}
+
+@keyframes liner {
+    50% {
+        --lines: 0.00007px;
+    }
+}
+
+.noise {
+    /* animate the length custom property */
+    animation: liner 3s linear infinite;
+
+    /*
+            repeating sub pixel radial hard stop lines
+            creates thousands, so small they distort
+            use this distortion as a mask
+            the hard stops are basically on/off lines
+          */
+    mask: repeating-radial-gradient(
+            circle at center,
+            #000,
+            var(--lines),
+            #000,
+            0,
+            #0000,
+            calc(var(--lines) * 2),
+            #0000 0
+    );
+}

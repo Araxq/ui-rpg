@@ -39,7 +39,6 @@ const Choices: VoidComponent<Props> = (p) => {
             variant="outline"
             size="lg"
             onClick={() => {
-              console.log(item);
               p.handleClick(item.outcome);
             }}
           >
