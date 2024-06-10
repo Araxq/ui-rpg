@@ -1,13 +1,17 @@
 import type { Component } from "solid-js";
 import Layout from "~/app/Layout";
 import Routes from "~/app/Routes";
-import "./effects.css";
+import "~/components/ui-effects/effects.css";
+import UIEffectsInjection from "~/components/ui-effects";
 
 const App: Component = () => {
   return (
-    <Layout>
-      <Routes />
-    </Layout>
+    <>
+      <UIEffectsInjection />
+      <Layout>
+        <Routes />
+      </Layout>
+    </>
   );
 };
 
