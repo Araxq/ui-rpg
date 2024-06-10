@@ -4,8 +4,8 @@ export default [
     cover:
       "https://cdn.openart.ai/stable_diffusion/2ae4b9987888e5fa3bdf521b1c75ae078a129eca_2000x2000.webp",
     description:
-      "<p>First paragraph</p>" +
-      "<p>Second - a longer one</p>" +
+      "<p class='text-center'>First paragraph</p>" +
+      "<p class='text-center'>Second - a longer one</p>" +
       "<p>lorem ipsum dolor sit amet consectetur adipiscing elit facilisis aute lorem soluta gubergren augue sanctus sunt te mollit mazim autem elit praesent excepteur minim sunt facilisis ipsum feugait est erat eirmod sed ut kasd liber te veniam nibh nulla sint cupiditat incidunt sint gubergren gubergren commodi cum deserunt sint excepteur</p>",
     choices: [
       {

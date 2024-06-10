@@ -6,7 +6,7 @@ type Props = { desc: string };
 const Description: VoidComponent<Props> = (p) => {
   return (
     <div
-      class="text-xl first:text-center"
+      class="text-xl"
       ref={(ref) => {
         new TypeIt(ref!, {
           strings: p.desc,
