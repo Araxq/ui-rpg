@@ -32,6 +32,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.3)
+      typeit:
+        specifier: ^8.8.3
+        version: 8.8.3
     devDependencies:
       '@eslint/js':
         specifier: ^9.4.0
@@ -1216,6 +1219,9 @@ packages:
 
   '@types/node@20.14.2':
     resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
+
+  '@types/web-animations-js@2.2.16':
+    resolution: {integrity: sha512-ATELeWMFwj8eQiH0KmvsCl1V2lu/qx/CjOBmv4ADSZS5u8r4reMyjCXtxG7khqyiwH3IOMNdrON/Ugn94OUcRA==}
 
   '@typescript-eslint/eslint-plugin@7.12.0':
     resolution: {integrity: sha512-7F91fcbuDf/d3S8o21+r3ZncGIke/+eWk0EpO21LXhDfLahriZF9CGj4fbAetEjlaBdjdSm9a6VeXbpbT6Z40Q==}
@@ -2544,6 +2550,9 @@ packages:
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
+
+  typeit@8.8.3:
+    resolution: {integrity: sha512-K7nChkj6iyylUi713VBDULUXXLF0pfB6nFPVhNnXTKO2An7NzVz5fjoAHk2FAC3TFLiSnU+QsqhDmap17oBELw==}
 
   typescript-eslint@7.12.0:
     resolution: {integrity: sha512-D6HKNbQcnNu3BaN4HkQCR16tgG8Q2AMUWPgvhrJksOXu+d6ys07yC06ONiV2kcsEfWC22voB6C3PvK2MqlBZ7w==}
@@ -3994,6 +4003,8 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/web-animations-js@2.2.16': {}
+
   '@typescript-eslint/eslint-plugin@7.12.0(@typescript-eslint/parser@7.12.0(eslint@9.4.0)(typescript@5.4.5))(eslint@9.4.0)(typescript@5.4.5)':
     dependencies:
       '@eslint-community/regexpp': 4.10.1
@@ -5317,6 +5328,10 @@ snapshots:
   type-check@0.4.0:
     dependencies:
       prelude-ls: 1.2.1
+
+  typeit@8.8.3:
+    dependencies:
+      '@types/web-animations-js': 2.2.16
 
   typescript-eslint@7.12.0(eslint@9.4.0)(typescript@5.4.5):
     dependencies:

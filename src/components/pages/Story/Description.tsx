@@ -1,12 +1,21 @@
-import { For, type VoidComponent } from "solid-js";
+import { type VoidComponent } from "solid-js";
+import TypeIt from "typeit";
 
-type Props = { desc: string[] };
+type Props = { desc: string };
 
 const Description: VoidComponent<Props> = (p) => {
   return (
-    <div class="text-center text-xl">
-      <For each={p.desc}>{(item) => <p class="mb-4">{item}</p>}</For>
-    </div>
+    <div
+      class="text-xl first:text-center"
+      ref={(ref) => {
+        new TypeIt(ref!, {
+          strings: p.desc,
+          cursor: false,
+          speed: 30,
+          nextStringDelay: 300,
+        }).go();
+      }}
+    />
   );
 };
 

@@ -1,6 +1,6 @@
 import { Component, createSignal, Show } from "solid-js";
 import Choices from "~/components/pages/Story/Choices";
-import storyData from "~/assets/text/story-text.json";
+import storyData from "~/assets/text/story-text";
 import Description from "~/components/pages/Story/Description";
 import Outcome from "./Outcome";
 
