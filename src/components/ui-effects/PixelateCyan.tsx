@@ -4,7 +4,7 @@ type Props = {};
 
 const PixelateCyan: VoidComponent<Props> = () => {
   return (
-    <svg class="absolute">
+    <svg class="absolute h-0 w-0">
       <filter
         id="pixelate-cyan"
         color-interpolation-filters="sRGB"
