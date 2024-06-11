@@ -5,6 +5,7 @@ import StoryIcon from "~/assets/icons/story.svg";
 import SpellsIcon from "~/assets/icons/spells.svg";
 import InventoryIcon from "~/assets/icons/inventory.svg";
 import SkillsIcon from "~/assets/icons/skills.svg";
+import Layout from "~/app/Layout";
 
 export const ROUTES = [
   { path: "/", component: Story, icon: StoryIcon },
@@ -21,7 +22,7 @@ type Props = {};
 
 const Routes: VoidComponent<Props> = () => {
   return (
-    <Router>
+    <Router root={Layout}>
       <For each={ROUTES}>
         {(route) => <Route path={route.path} component={route.component} />}
       </For>

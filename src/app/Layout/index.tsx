@@ -1,8 +1,9 @@
-import type { FlowComponent } from "solid-js";
+import type { Component } from "solid-js";
 import TopBar from "~/app/Layout/TopBar";
 import Sidebar from "~/app/Layout/Sidebar";
+import { RouteSectionProps } from "@solidjs/router";
 
-const Layout: FlowComponent = (p) => {
+const Layout: Component<RouteSectionProps> = (p) => {
   return (
     <div class="flex h-screen flex-col font-mono">
       <TopBar />
